@@ -1,0 +1,9 @@
+import pypyodbc 
+connection = pypyodbc.connect(driver='{SQL Server}',  
+                              server='localhost\SQLBI',  
+                              database='AdventureWorks2014',                
+               trusted_connection='yes') 
+ 
+connection.getinfo 
+ 
+cursor = connection.cursor() 
